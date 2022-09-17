@@ -1,0 +1,17 @@
+$icons: '../../assets/icons';
+
+.IconButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 8px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  cursor: pointer;
+
+  &:hover {
+    opacity: .7;
+  }
+}

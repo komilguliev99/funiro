@@ -1,0 +1,24 @@
+@import './abstract';
+
+@mixin dropShadow {
+  box-shadow: 0px 4px 14px 1px rgba(0, 0, 0, 0.16);
+}
+
+@mixin p-vertical {
+  padding-top: $p-top;
+  padding-bottom: $p-bottom;
+}
+
+@mixin p-horizontal {
+  padding-left: $p-left;
+  padding-right: $p-right;
+}
+
+@mixin p-all {
+  padding: $p-top $p-right $p-bottom $p-left;
+}
+
+@mixin v-center {
+  top: 50%;
+  transform: translateY(-50%)
+}

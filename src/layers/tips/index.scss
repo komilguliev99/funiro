@@ -1,0 +1,12 @@
+@import '../../scss/abstract';
+@import '../../scss/mixins';
+
+.Tips {
+  padding: $p-top 8rem $p-bottom 8rem;
+
+  > h2 {
+    text-align: center;
+    color: $color-grey-1;
+    margin-bottom: 32px;
+  }
+}

@@ -1,0 +1,65 @@
+@import '../../scss/abstract';
+@import '../../scss/mixins';
+
+.Searchbar {
+  position: relative;
+  flex-grow: 1;
+
+  > input {
+    width: 100%;
+    padding: 12px 44px;
+    border: none;
+    box-sizing: border-box;
+    font-size: 14px;
+    line-height: 18px;
+    color: $color-grey-2;
+    
+    &:focus {
+      outline: 1px solid $color-grey-4;
+    }
+  }
+
+  > input:placeholder-shown + span {
+    visibility: hidden;
+  }
+
+  > span {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    overflow: hidden;
+    visibility: visible;
+    cursor: pointer;
+
+    &::after,
+    &::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    &::before {
+      background: $color-primary;
+      opacity: .12;
+    }
+
+    &::after {
+      background: url('../../assets/icons/close.svg') no-repeat center;
+      z-index: 2;
+      transform: scale(.7);
+    }
+  }
+
+  > .Icon {
+    position: absolute;
+    left: 1.2rem;
+    @include v-center;
+  }
+}

@@ -1,0 +1,23 @@
+@import '../../scss/typography';
+@import '../../scss/abstract';
+
+.Products {
+  padding-bottom: 4.4rem;
+
+  &__title {
+    font-size: $text-h2;
+    line-height: $line-h2;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3.2rem;
+  }
+
+  &__content {
+    margin-bottom: 32px;
+  }
+
+  &__show-more {
+    display: flex;
+    justify-content: center;
+  }
+}

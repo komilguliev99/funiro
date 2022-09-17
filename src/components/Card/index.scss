@@ -1,0 +1,41 @@
+$icons: '../../assets/icons';
+
+.Card {
+  position: relative;
+  width: 50rem;
+  height: auto;
+
+  &__content {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: #ffffff72;
+    backdrop-filter: blur(31px);
+
+  }
+
+  &_sm {
+    width: 30rem;
+  }
+
+  &_sm &__content {
+    padding: 2.4rem;
+  }
+
+  &_md {
+    width: 40rem;
+  }
+
+  &_md &__content {
+    padding: 3rem;
+  }
+
+  &_lg {
+    width: 50rem;
+  }
+
+  &_lg &__content {
+    padding: 6rem;
+  }
+}

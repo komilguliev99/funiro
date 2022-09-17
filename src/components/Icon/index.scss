@@ -1,0 +1,75 @@
+$icons: '../../assets/icons';
+
+.Icon {
+  display: inline-block;
+  background-position: center;
+  background-size: cover;
+
+  &_20 {
+    width: 20px;
+    height: 20px
+  }
+
+  &_24 {
+    width: 24px;
+    height: 24px;
+  }
+
+  &_32 {
+    width: 32px;
+    height: 32px;
+  }
+
+  &_40 {
+    width: 40px;
+    height: 40px;
+  }
+
+  &_heart {
+    background-image: url('#{$icons}/heart.svg');
+  }
+
+  &_heart_white {
+    background-image: url('#{$icons}/heart_white.svg');
+  }
+
+  &_cart {
+    background-image: url('#{$icons}/cart.svg');
+  }
+
+  &_search {
+    background-image: url('#{$icons}/search.svg');
+  }
+
+  &_arrow-right {
+    background-image: url('#{$icons}/arrow-right.svg');
+  }
+
+  &_arrow-right_orange {
+    background-image: url('#{$icons}/arrow-right-primary.svg');
+  }
+
+  &_chevron-right {
+    background-image: url('#{$icons}/chevron-right.svg');
+  }
+
+  &_top {
+    background-image: url('#{$icons}/top.svg');
+  }
+
+  &_support {
+    background-image: url('#{$icons}/support.svg');
+  }
+
+  &_shipping {
+    background-image: url('#{$icons}/shipping.svg');
+  }
+
+  &_protection {
+    background-image: url('#{$icons}/protection.svg');
+  }
+
+  &_share {
+    background-image: url('#{$icons}/share.svg');
+  }
+}

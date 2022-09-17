@@ -1,0 +1,25 @@
+@import '../../scss/abstract';
+@import '../../scss/typography';
+
+.Explore {
+  background: $color-main-2;
+  padding: $p-top 0 $p-bottom 0;
+
+  &__content {
+    height: 67rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    > h2 {
+      margin-bottom: 8px;
+      color: $color-grey-1;
+    }
+
+    > p {
+      color: $color-grey-2;
+      margin-bottom: 24px;
+    }
+  }
+}

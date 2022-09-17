@@ -1,0 +1,56 @@
+@import '../../scss/abstract';
+@import '../../scss/typography';
+
+.Button {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  transition: transform .3s ease, opacity .3s ease;
+
+  &_inline {
+    display: inline-block;
+    width: auto;
+
+    &.Button_md {
+      padding: 1.2rem 6rem;
+    }
+  }
+  
+  &_primary {
+    color: #fff;
+    background: $color-primary;
+  }
+
+  &_primary-outline {
+    color: $color-primary;
+    border: 1px solid $color-primary;
+  }
+
+  &_secondary {
+    color: $color-primary;
+    background: #fff;
+  }
+
+  &_lg {
+    font-size: $text-xl;
+    line-height: $line-xl;
+    padding: 2.4rem 0;
+  }
+
+  &_md {
+    padding: 1.2rem 2rem;
+  }
+
+  &:hover {
+    opacity: .8;
+  }
+
+  &:active {
+    transform: scaleX(.98);
+  }
+
+}

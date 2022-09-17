@@ -1,0 +1,49 @@
+@import '../../scss/abstract';
+@import '../../scss/mixins';
+
+.Header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 999;
+  
+  @include p-vertical;
+  
+  &_bg {
+    background-color: $color-main;
+  }
+
+  &__logo {
+    font-size: 24px;
+    line-height: 29px;
+    font-family: 700;
+  }
+
+  &__left {
+    display: flex;
+    column-gap: 40px;
+    align-items: center;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    column-gap: 32px;
+
+    > * {
+      cursor: pointer;
+
+      &:hover {
+        opacity: .56;
+      }
+    }
+
+    > img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+@import '../node_modules/bootstrap-grid/dist/grid.min.css';
+@import './scss/mixins';
+@import './scss/typography';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: $text-normal;
+  line-height: $line-normal;
+}
+
+.row > div {
+  box-sizing: border-box;
+}
+
+.custom-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  @include p-horizontal;
+}
+
+h2 {
+  font-size: $text-h2;
+  line-height: $line-h2;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: $text-h3;
+  line-height: $line-h3;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: $text-h4;
+  line-height: $line-h4;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: $text-h5;
+  line-height: $line-h5;
+  font-weight: 600;
+}

@@ -1,0 +1,31 @@
+@import '../../scss/abstract';
+
+.Facts {
+  padding: 8rem 0;
+  display: flex;
+  justify-content: space-between;
+
+  &__item {
+    display: flex;
+    column-gap: 24px;
+    align-items: center;
+  }
+
+  &__item-content {
+
+    > h4 {
+      font-size: 18px;
+      line-height: 27px;
+      font-weight: 600;
+      margin-bottom: 2px;
+      color: $color-grey-1;
+    }
+
+    > p {
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 500;
+      color: $color-grey-3;
+    }
+  }
+}
