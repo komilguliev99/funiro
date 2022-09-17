@@ -20,7 +20,7 @@ const ProductCard: FC<IProductCard> = ({
             <div style={{ backgroundImage: `url(${image})` }} className="ProductCard__img" />
             <div className="ProductCard__content">
                 <h4>{ title }</h4>
-                <h5>{ subtitle }</h5>
+                <p className="ProductCard__subtitle">{ subtitle }</p>
                 <p>{ price }</p>
             </div>
             <div className="ProductCard__shadow-content">

@@ -9,6 +9,8 @@
   flex-direction: column-reverse;
   justify-content: center;
   position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
 
   &__dots-container {
     position: absolute;

@@ -25,17 +25,19 @@
       font-weight: 600;
     }
 
-    > h5 {
-      font-weight: 500;
-      color: $color-grey-3;
-    }
-
-    > p {
+    > p:nth-child(3) {
       font-size: $text-xl;
       line-height: $line-xl;
       font-weight: 600;
       position: relative;
     }
+  }
+
+  &__subtitle {
+    font-size: $text-normal;
+    line-height: $line-normal;
+    font-weight: 500;
+    color: $color-grey-3;
   }
 
   &__buttons {

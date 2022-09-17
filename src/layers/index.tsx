@@ -4,3 +4,4 @@ export { default as Facts } from './facts';
 export { default as Products } from './products';
 export { default as Explore } from './explore';
 export { default as Tips } from './tips';
+export { default as Gallery } from './gallery';
