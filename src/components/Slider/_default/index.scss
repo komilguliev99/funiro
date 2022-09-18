@@ -56,7 +56,6 @@
     position: absolute;
     right: 0;
     @include v-center;
-    @include p-horizontal;
   }
 
   &__arrow {

@@ -1,5 +1,6 @@
 @import '../../scss/typography';
 @import '../../scss/abstract';
+@import '../../scss/mixins';
 
 .ProductCard {
   position: relative;
@@ -30,6 +31,38 @@
       line-height: $line-xl;
       font-weight: 600;
       position: relative;
+
+      > span {
+        color: $color-grey-4;
+        text-decoration: line-through;
+        font-size: $text-normal;
+        line-height: $line-normal;
+        position: absolute;
+        right: 0;
+        @include v-center;
+      }
+    }
+
+    > span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 4.8rem;
+      height: 4.8rem;
+      border-radius: 50%;
+      color: #fff;
+      font-size: $text-normal;
+      line-height: $line-normal;
+      font-weight: 500;
+      background: $color-red;
+      position: absolute;
+      top: 2.8rem;
+      right: 2.8rem;
+
+      &.new {
+        background: $color-green;
+        text-transform: capitalize;
+      }
     }
   }
 

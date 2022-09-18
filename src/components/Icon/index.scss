@@ -72,4 +72,16 @@ $icons: '../../assets/icons';
   &_share {
     background-image: url('#{$icons}/share.svg');
   }
+
+  &_phone {
+    background-image: url('#{$icons}/phone.svg');
+  }
+
+  &_location {
+    background-image: url('#{$icons}/location.svg');
+  }
+
+  &_send {
+    background-image: url('#{$icons}/send.svg');
+  }
 }

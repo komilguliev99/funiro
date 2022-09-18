@@ -6,3 +6,6 @@ export { default as Card } from './Card';
 export { default as Button } from './Button';
 export { default as IconButton } from './IconButton';
 export { default as ProductCard } from './ProductCard';
+export { default as Fact } from './Fact';
+export { default as MenuColumn } from './MenuColumn';
+export { default as Input } from './Input';

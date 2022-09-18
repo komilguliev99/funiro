@@ -12,7 +12,7 @@ interface IProductCard {
 }
 
 const ProductCard: FC<IProductCard> = ({
-    title, subtitle, price, image
+    title, subtitle, price, image, tag, discount
 }) => {
 
     return (
@@ -21,7 +21,8 @@ const ProductCard: FC<IProductCard> = ({
             <div className="ProductCard__content">
                 <h4>{ title }</h4>
                 <p className="ProductCard__subtitle">{ subtitle }</p>
-                <p>{ price }</p>
+                <p>{ price } { Boolean(discount) && <span>{ discount }</span> }</p>
+                { Boolean(tag) && <span className={tag === 'new' ? 'new' : ''}>{ tag }</span> }
             </div>
             <div className="ProductCard__shadow-content">
                 <Button size="md" type="secondary">Add to cart</Button>

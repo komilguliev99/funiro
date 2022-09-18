@@ -1,0 +1,44 @@
+@import '../../scss/abstract';
+
+.Footer {
+  padding-top: 3rem;
+  color: $color-grey-2;
+
+  .row > div {
+    min-height: 23rem;
+    margin-bottom: 3rem;
+  }
+
+  > .custom-container {
+    border-top: 1px solid $color-grey-5;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  &__logo {
+    color: #000;
+    margin-bottom: 1.6rem;
+    font-weight: 700;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.6rem;
+
+    > p {
+      padding-right: 2rem;
+    }
+  }
+
+  a {
+    color: $color-grey-2;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover {
+      opacity: .8;
+    }
+  }
+
+}

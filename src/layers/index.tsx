@@ -5,3 +5,4 @@ export { default as Products } from './products';
 export { default as Explore } from './explore';
 export { default as Tips } from './tips';
 export { default as Gallery } from './gallery';
+export { default as Footer } from './footer';

@@ -1,0 +1,27 @@
+@import '../../scss/abstract';
+@import '../../scss/typography';
+
+.Input {
+  display: flex;
+  column-gap: 4px;
+
+  > input {
+    outline: 1px solid transparent;
+    background: $color-light-bg;
+    padding: 1rem 1.2rem;
+    color: $color-grey-3;
+    font-size: $text-normal;
+    line-height: $line-normal;
+    border: none;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    width: 48px;
+    box-sizing: border-box;
+    cursor: pointer;
+    padding: 1rem;
+    background: $color-primary;
+  }
+}

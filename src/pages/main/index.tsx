@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { Explore, Facts, Gallery, Intro, Products, Tips } from '../../layers';
+import { Explore, Facts, Footer, Gallery, Intro, Products, Tips } from '../../layers';
 
 const Main: FC<{}> = () => {
     return (
@@ -10,6 +10,7 @@ const Main: FC<{}> = () => {
             <Explore />
             <Tips />
             <Gallery />
+            <Footer />
         </div>
     );
 };
