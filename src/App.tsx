@@ -8,7 +8,7 @@ function App() {
     return (
         <div className="App">
             <Header />
-            <Router basename="/">
+            <Router basename="/funiro">
                 <Routes>
                     <Route path="/" element={<Main />} />
                     <Route path="/" element={<Products />} />
