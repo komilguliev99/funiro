@@ -1,6 +1,7 @@
 @import '../../scss/typography';
 @import '../../scss/abstract';
 @import '../../scss/mixins';
+@import '../../scss/screens';
 
 .ProductCard {
   position: relative;
@@ -104,5 +105,16 @@
     visibility: visible;
     opacity: 1;
     transform: translateY(0);
+  }
+
+  @include respond-to('small') {
+
+    &__shadow-content > .Button {
+      max-width: 24rem;
+    }
+
+    &__buttons {
+      max-width: 24rem;
+    }
   }
 }

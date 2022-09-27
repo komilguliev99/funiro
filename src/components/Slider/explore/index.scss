@@ -1,5 +1,6 @@
 @import '../../../scss/abstract';
 @import '../../../scss/mixins';
+@import '../../../scss/screens';
 
 .SliderExplore {
   width: 100%;
@@ -195,6 +196,12 @@
       bottom: 24px;
       right: 24px;
       line-height: 10px;
+    }
+  }
+
+  @include respond-to("small") {
+    &__dots-container {
+      display: none;
     }
   }
 }

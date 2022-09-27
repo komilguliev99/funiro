@@ -2,13 +2,15 @@
 
 .Facts {
   padding: 8rem 0;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-auto-columns: 30rem;
 
   &__item {
     display: flex;
     column-gap: 24px;
     align-items: center;
+    margin-bottom: 3rem;
   }
 
   &__item-content {

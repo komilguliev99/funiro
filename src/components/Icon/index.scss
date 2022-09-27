@@ -84,4 +84,12 @@ $icons: '../../assets/icons';
   &_send {
     background-image: url('#{$icons}/send.svg');
   }
+
+  &_bars {
+    background-image: url('#{$icons}/bars.svg');
+  }
+
+  &_close {
+    background-image: url('#{$icons}/close.svg');
+  }
 }

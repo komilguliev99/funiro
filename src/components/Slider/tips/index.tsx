@@ -46,7 +46,7 @@ const SliderTips: FC<ISliderTips> = ({
     const leftControllClass = step === 0 ? 'disabled' : '';
     const rightControllClass = step === totalSteps ? 'disabled' : '';
 
-    const left = -(step * width + (step - 1) * 30) + 'px';
+    const left = -(step * width + (step - 1 + Number(width <= 600)) * 30) + 'px';
 
     return (
         <div ref={myRef} className="SliderTips">

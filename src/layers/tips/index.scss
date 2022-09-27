@@ -1,5 +1,6 @@
 @import '../../scss/abstract';
 @import '../../scss/mixins';
+@import '../../scss/screens';
 
 .Tips {
   padding: $p-top 8rem $p-bottom 8rem;
@@ -8,5 +9,11 @@
     text-align: center;
     color: $color-grey-1;
     margin-bottom: 32px;
+  }
+
+  // SMALL
+  @include respond-to('small') {
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 }

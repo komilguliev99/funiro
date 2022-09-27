@@ -1,6 +1,7 @@
 @import '../node_modules/bootstrap-grid/dist/grid.min.css';
 @import './scss/mixins';
 @import './scss/typography';
+@import './scss/screens';
 
 * {
   margin: 0;
@@ -25,6 +26,7 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   box-sizing: border-box;
+  padding: 0 3rem;
   // @include p-horizontal;
 }
 
@@ -54,6 +56,12 @@ h5 {
 
 @media screen and (max-width: 1440px) {
   .custom-container {
-    padding: 0 2rem;
+    padding: 0 3rem;
+  }
+}
+
+@include respond-to('large') {
+  .custom-container {
+    padding: 0 4rem;
   }
 }

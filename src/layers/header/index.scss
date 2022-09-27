@@ -1,5 +1,6 @@
 @import '../../scss/abstract';
 @import '../../scss/mixins';
+@import '../../scss/screens';
 
 .Header {
   position: absolute;
@@ -10,6 +11,11 @@
   z-index: 999;
   
   @include p-vertical;
+
+  > .custom-container > .row {
+    box-sizing: border-box;
+    position: relative;
+  }
   
   &_bg {
     background-color: $color-main;
@@ -44,6 +50,54 @@
     > img {
       width: 40px;
       height: 40px;
+    }
+  }
+
+  &__burger {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    display: none;
+    cursor: pointer;
+    z-index: 99;
+
+    &:hover {
+      opacity: .8;
+    }
+  }
+
+  .custom-container > .row > &__logo {
+    display: none;
+  }
+
+  @include respond-to('small') {
+    &__left > .Searchbar {
+      display: none;
+    }
+  }
+
+  @include respond-to('medium') {
+    &__right {
+      display: none;
+    }
+
+    &__burger {
+      display: inline-block;
+    }
+  }
+
+  @include respond-to('large') {
+    .custom-container > .row > &__logo {
+      display: block;
+    }
+
+    &__left {
+      padding-right: 2rem;
+      
+      > .Navbar {
+        display: none;
+      }
     }
   }
 }

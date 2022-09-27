@@ -1,4 +1,4 @@
-$icons: '../../assets/icons';
+@import '../../scss/screens';
 
 .Card {
   position: relative;
@@ -37,5 +37,32 @@ $icons: '../../assets/icons';
 
   &_lg &__content {
     padding: 6rem;
+  }
+
+  // MEDIUM
+  @include respond-to('medium') {
+    &_sm {
+      width: 25rem;
+    }
+  
+    &_sm &__content {
+      padding: 2rem;
+    }
+  
+    &_md {
+      width: 34rem;
+    }
+  
+    &_md &__content {
+      padding: 2rem;
+    }
+  
+    &_lg {
+      width: 40rem;
+    }
+  
+    &_lg &__content {
+      padding: 3rem;
+    }
   }
 }

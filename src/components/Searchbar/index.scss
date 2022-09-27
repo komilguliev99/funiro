@@ -1,5 +1,6 @@
 @import '../../scss/abstract';
 @import '../../scss/mixins';
+@import '../../scss/screens';
 
 .Searchbar {
   position: relative;
@@ -62,4 +63,8 @@
     left: 1.2rem;
     @include v-center;
   }
+
+  // @include respond-to('medium') {
+  //   display: none;
+  // }
 }

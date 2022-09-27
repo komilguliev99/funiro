@@ -1,5 +1,6 @@
 @import '../../scss/abstract';
 @import '../../scss/typography';
+@import '../../scss/screens';
 
 .Explore {
   background: $color-main-2;
@@ -20,6 +21,12 @@
     > p {
       color: $color-grey-2;
       margin-bottom: 24px;
+    }
+  }
+
+  @include respond-to('large') {
+    &__content {
+      height: 35rem;
     }
   }
 }

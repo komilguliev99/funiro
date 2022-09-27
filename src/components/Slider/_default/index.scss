@@ -1,5 +1,6 @@
 @import '../../../scss/abstract';
 @import '../../../scss/mixins';
+@import '../../../scss/screens';
 
 .SliderDefault {
   width: 100%;
@@ -140,6 +141,37 @@
       bottom: 24px;
       right: 24px;
       line-height: 10px;
+    }
+  }
+
+  @include respond-to('medium') {
+    height: 50rem;
+
+    &__item {
+      min-width: 70rem;
+    }
+  }
+
+  @include respond-to('small') {
+    height: 40rem;
+
+    &__item {
+      min-width: 50rem;
+    }
+
+    &__controlls {
+      box-sizing: border-box;
+      padding-left: 3rem;
+      justify-content: start;
+    }
+
+    &__arrows {
+      right: 3rem;
+    }
+
+    &__arrow {
+      width: 3.8rem;
+      height: 3.8rem;
     }
   }
 }

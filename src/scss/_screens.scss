@@ -1,0 +1,49 @@
+$screens: (
+  "large": (
+    "min": 992px,
+    "max": 1200px
+  ),
+  "medium": (
+    "min": 768px,
+    "max": 992px
+  ),
+  "small": (
+    "min": 450px,
+    "max": 768px
+  ),
+  "extra-small": (
+    "min": 0px,
+    "max": 450px
+  )
+);
+
+@mixin respond-above($breakpoint) {
+
+  @if map-has-key($screens, $breakpoint) {
+    $item: map-get($screens, $breakpoint);
+    $min: map-get($item, "min");
+    $max: map-get($item, "max");
+
+    @media (min-width: $min) and (max-width: $max) {
+      @content;
+    }
+
+  } @else {
+    @warn "Invalid breakpoint: #{$breakpoint}.";
+  }
+}
+
+@mixin respond-to($breakpoint) {
+
+  @if map-has-key($screens, $breakpoint) {
+    $item: map-get($screens, $breakpoint);
+    $max: map-get($item, "max");
+
+    @media screen and (max-width: $max) {
+      @content;
+    }
+
+  } @else {
+    @warn "Invalid breakpoint: #{$breakpoint}.";
+  }
+}

@@ -44,8 +44,9 @@ const SliderDefault: FC<ISliderDefault> = ({
     const rightControllClass = step === items.length - 1 ? 'disabled' : '';
 
     console.log('Step: ', step, width);
+    const alpha = (width < 600) ? 1 : .8;
     const len = items.length;
-    const left = -(step * width + step * 30 + (.4 * width)) + 'px';
+    const left = -(step * width + step * 30 + (alpha === 1 ? 30 : 0) + ((alpha) * width)) + 'px';
 
     return (
         <div ref={myRef} className="SliderDefault">
