@@ -1,21 +1,13 @@
 {
   "files": {
     "main.css": "/funiro/static/css/main.ba0dac38.css",
-    "main.js": "/funiro/static/js/main.3ac61266.js",
+    "main.js": "/funiro/static/js/main.8c46615c.js",
     "static/js/787.e2ae17be.chunk.js": "/funiro/static/js/787.e2ae17be.chunk.js",
     "static/media/slide1.svg": "/funiro/static/media/slide1.2a6362b1a971e9ae1260ba04644a1d2f.svg",
     "static/media/slide2.svg": "/funiro/static/media/slide2.7021317c0da5bed3ae83b5baee4e00bb.svg",
-    "static/media/gallery4.png": "/funiro/static/media/gallery4.8ad8d4e8938a5c003d29.png",
     "static/media/tips1.png": "/funiro/static/media/tips1.1604bfd04f5705563152.png",
-    "static/media/explore3.png": "/funiro/static/media/explore3.75156fa70d4ce2aed942.png",
     "static/media/tips3.png": "/funiro/static/media/tips3.d25e0ed289f85b7818f7.png",
-    "static/media/explore1.png": "/funiro/static/media/explore1.8da4be8553087fbfa53f.png",
-    "static/media/explore2.png": "/funiro/static/media/explore2.a9f51e95f30aeee43b83.png",
-    "static/media/gallery3.png": "/funiro/static/media/gallery3.ff262fce8556dfe08d9e.png",
-    "static/media/gallery1.png": "/funiro/static/media/gallery1.57f2a831aa5d23997771.png",
-    "static/media/gallery2.png": "/funiro/static/media/gallery2.ebe098b8d7ce7c8533ca.png",
     "static/media/gallery7.png": "/funiro/static/media/gallery7.17f4b40ef2a663cc9bd0.png",
-    "static/media/gallery5.png": "/funiro/static/media/gallery5.339b0b1e81f4499b9c33.png",
     "static/media/product7.png": "/funiro/static/media/product7.008387e81d12ad853b36.png",
     "static/media/gallery9.png": "/funiro/static/media/gallery9.0d301a0b6add2a9614be.png",
     "static/media/tips2.png": "/funiro/static/media/tips2.85a469da29cc2372af4f.png",
@@ -48,11 +40,11 @@
     "static/media/arrow-right.svg": "/funiro/static/media/arrow-right.0f9c63b1fed4a8a5c2c1.svg",
     "static/media/heart_white.svg": "/funiro/static/media/heart_white.3f71045e613326cdfd4c.svg",
     "main.ba0dac38.css.map": "/funiro/static/css/main.ba0dac38.css.map",
-    "main.3ac61266.js.map": "/funiro/static/js/main.3ac61266.js.map",
+    "main.8c46615c.js.map": "/funiro/static/js/main.8c46615c.js.map",
     "787.e2ae17be.chunk.js.map": "/funiro/static/js/787.e2ae17be.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ba0dac38.css",
-    "static/js/main.3ac61266.js"
+    "static/js/main.8c46615c.js"
   ]
 }
